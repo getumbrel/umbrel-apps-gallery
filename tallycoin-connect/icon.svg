@@ -1,0 +1,25 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="256" height="256" fill="url(#paint0_radial_1102_4647)"/>
+<g filter="url(#filter0_d_1102_4647)">
+<path d="M197.102 80.2682C229.408 126.406 230.83 180.271 191.477 207.826C152.123 235.382 86.4506 214.632 54.1446 168.494C21.8385 122.356 24.7735 75.9989 64.1269 48.4433C103.48 20.8877 160.091 34.4794 197.102 80.2682Z" fill="#565654"/>
+</g>
+<path d="M196.417 79.2892C227.789 124.094 229.235 176.356 191.125 203.041C153.014 229.727 89.3312 209.512 57.9588 164.707C26.5864 119.903 29.373 74.9303 67.4837 48.2449C105.594 21.5595 160.484 34.8176 196.417 79.2892Z" fill="#F3CC64"/>
+<path d="M187.171 84.0431C213.548 121.713 215.152 165.381 183.739 187.377C152.325 209.373 99.3307 191.994 72.954 154.324C46.5773 116.654 48.5409 79.108 79.9547 57.1118C111.368 35.1157 157.013 46.6159 187.171 84.0431Z" fill="white"/>
+<path d="M161.871 158.242C165.017 156.569 167.618 154.783 169.308 153.561L163.053 141.796C162.017 142.427 160.921 143.252 159.411 144.054C153.686 147.099 149.688 146.561 146.209 140.018L127.475 104.785L139.869 98.1943L133.446 86.1143L121.052 92.7046L112.053 75.78L96.1348 84.2437L105.134 101.168L95.6963 106.186L102.119 118.266L111.557 113.248L130.993 149.803C138.286 163.519 147.903 165.669 161.871 158.242Z" fill="#565654"/>
+<defs>
+<filter id="filter0_d_1102_4647" x="28.045" y="34.2461" width="197.14" height="193.965" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1102_4647"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1102_4647" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial_1102_4647" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 128) rotate(90) scale(128)">
+<stop stop-color="#A7A7F9"/>
+<stop offset="1" stop-color="#573E92"/>
+</radialGradient>
+</defs>
+</svg>
