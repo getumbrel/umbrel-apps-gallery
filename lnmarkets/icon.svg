@@ -1,12 +1,72 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="256" height="256" fill="url(#paint0_linear)"/>
-<path d="M33 159.938V96H47.0663V147.241H78.9437V159.938H33Z" fill="white"/>
-<path d="M132.393 159.938L101.429 119.292V159.938H87.545V96H100.515L130.474 135.367V96H144.358V159.938H132.393Z" fill="white"/>
-<path d="M209.756 159.938V118.195L191.763 145.506H191.397L173.586 118.469V159.938H159.702V96H174.865L191.671 123.036L208.478 96H223.64V159.938H209.756Z" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear" x1="-1.05985e-06" y1="256" x2="260.5" y2="-3.43143e-06" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0071BC"/>
-<stop offset="1" stop-color="#0A167B"/>
-</linearGradient>
-</defs>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1009.7 1009.7"
+   style="enable-background:new 0 0 1009.7 1009.7;"
+   xml:space="preserve"
+   sodipodi:docname="LNM-Logo_full-color-accent-symbol2.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs105" /><sodipodi:namedview
+   id="namedview103"
+   pagecolor="#808080"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:pageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="true"
+   showgrid="false"
+   showguides="false"
+   inkscape:zoom="1.3277948"
+   inkscape:cx="325.35147"
+   inkscape:cy="581.41512"
+   inkscape:window-width="2810"
+   inkscape:window-height="2105"
+   inkscape:window-x="1030"
+   inkscape:window-y="27"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="layer2"
+   inkscape:snap-grids="true"
+   inkscape:snap-page="true"
+   inkscape:snap-center="true" />
+<style
+   type="text/css"
+   id="style94">
+	.st0{fill:#FFC60B;}
+	.st1{fill:#FFFFFF;}
+</style>
+
+<g
+   inkscape:groupmode="layer"
+   id="layer1"
+   inkscape:label="Layer 1"
+   style="display:inline"><rect
+     style="fill:#304793;fill-opacity:1;stroke-width:1.00346"
+     id="rect21441"
+     width="1010"
+     height="1010"
+     x="-0.30000842"
+     y="0" /></g><g
+   inkscape:groupmode="layer"
+   id="layer2"
+   inkscape:label="Layer 2"
+   style="display:inline"><g
+     id="g100"
+     transform="translate(-8.3799939,-31.084994)">
+	<path
+   class="st0"
+   d="m 196.42,344.62 h 87.26 L 219.81,583 h 176.3 L 230.82,823.25 283.09,659.46 H 111.41 Z"
+   id="path96" />
+	<polygon
+   class="st1"
+   points="678.91,601.89 791.81,478.65 743.68,659.47 830.49,659.47 915.05,344.62 817.89,344.62 710.39,466.51 669.02,344.62 667.87,344.62 581.76,344.62 581.52,344.62 534.29,519.58 452.43,344.62 371.47,344.62 318.3,541.56 404.79,541.56 421.85,477.75 500.44,645.77 506.85,659.47 582.65,659.47 583.32,659.47 631.35,480.62 677.11,601.89 "
+   id="polygon98" />
+</g></g></svg>
