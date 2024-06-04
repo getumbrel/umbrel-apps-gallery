@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+ <title>128</title>
+ <rect width="256" height="256" fill="#fff" stroke-width=".89809"/>
+ <desc>Created with Sketch.</desc>
+ <g transform="matrix(1.5625 0 0 1.5625 28 28)" fill="none" fill-rule="evenodd">
+  <g id="small/Logo">
+   <g id="Group">
+    <path id="Path" d="m63.999 0c-20.004 0-44.134 4.5895-63.999 14.691 0 21.817-0.2742 76.171 63.999 113.31 64.274-37.138 64.001-91.491 64.001-113.31-19.866-10.102-43.996-14.691-64.001-14.691z" fill="#68bc71"/>
+    <path id="Combined-Shape" d="m64 0v128c-64.274-37.137-64-91.491-64-113.31 19.865-10.102 43.995-14.691 63.999-14.691z" fill="#67b279"/>
+   </g>
+   <path d="m63.435 82.286 37.136-49.205c-2.7213-2.1443-5.1082-0.6309-6.4222 0.54077l-0.04795 0.0038-30.964 31.666-11.666-13.802c-5.5656-6.3215-13.132-1.4996-14.9-0.22532l26.864 31.022" fill="#fff"/>
+  </g>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:title>128</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+</svg>
