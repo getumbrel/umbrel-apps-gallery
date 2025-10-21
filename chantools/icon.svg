@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.1)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#bg)" />
+
+  <!-- Wrench (simple tool icon) -->
+	<path d="M 69.243 90 c -5.389 0 -10.67 -2.107 -14.643 -6.081 c -5.433 -5.432 -7.391 -13.514 -5.115 -20.831 L 26.912 40.515 c -7.313 2.276 -15.397 0.32 -20.832 -5.114 c -5.933 -5.933 -7.705 -14.784 -4.514 -22.549 l 0.846 -2.059 l 12.493 12.493 c 2.311 2.31 6.07 2.311 8.381 0 c 2.31 -2.311 2.31 -6.071 0 -8.381 L 10.794 2.413 l 2.059 -0.846 c 7.766 -3.191 16.616 -1.418 22.549 4.514 c 5.433 5.433 7.39 13.516 5.114 20.831 l 22.572 22.573 c 7.314 -2.278 15.398 -0.32 20.832 5.114 c 5.934 5.933 7.704 14.784 4.514 22.549 l -0.847 2.059 L 75.095 66.714 c -1.113 -1.113 -2.601 -1.726 -4.191 -1.726 s -3.077 0.613 -4.191 1.726 c -2.31 2.311 -2.31 6.071 0 8.381 l 12.493 12.492 l -2.06 0.847 C 74.582 89.487 71.899 89.999 69.243 90 z M 27.692 37.1 l 25.206 25.207 l -0.322 0.887 c -2.345 6.469 -0.728 13.779 4.119 18.626 c 4.538 4.538 11.069 6.235 17.152 4.603 l -9.232 -9.232 c -3.466 -3.467 -3.466 -9.109 0 -12.576 c 3.466 -3.468 9.109 -3.468 12.576 0 l 9.232 9.232 c 1.633 -6.083 -0.064 -12.615 -4.602 -17.153 c -4.847 -4.847 -12.161 -6.464 -18.627 -4.118 l -0.887 0.322 L 37.101 27.692 l 0.322 -0.887 c 2.345 -6.469 0.729 -13.78 -4.118 -18.627 c -4.539 -4.538 -11.07 -6.235 -17.152 -4.603 l 9.232 9.232 c 3.467 3.467 3.467 9.109 0 12.576 s -9.109 3.468 -12.576 0 l -9.233 -9.232 C 1.942 22.234 3.64 28.765 8.178 33.304 c 4.848 4.848 12.16 6.464 18.628 4.118 L 27.692 37.1 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) translate(100 100) scale(9 9)" stroke-linecap="round"/>
+
+  <!-- Coin -->
+  <circle cx="720" cy="300" r="200" fill="url(#coin)" stroke="rgba(255,255,255,0.3)" stroke-width="10"/>
+
+  <!-- Lightning bolt -->
+  <path d="M520 320 L420 520 H500 L440 680 L620 480 H540 L600 320 Z"
+        fill="#FFFFFF" stroke="rgba(255,255,255,0.2)" stroke-width="6" stroke-linejoin="round" transform="translate(200 -200)" />
+
+  <!-- Glossy highlight -->
+  <rect x="64" y="64" width="896" height="400" rx="200" fill="url(#gloss)" />
+
+  <!-- Optional text label -->
+  <text x="512" y="940" text-anchor="middle"
+        font-family="Inter, Roboto, Helvetica, sans-serif"
+        font-size="56" font-weight="700"
+        fill="white" opacity="0.95">chantools</text>
+</svg>
+
