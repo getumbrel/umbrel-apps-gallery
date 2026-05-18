@@ -1,0 +1,40 @@
+<svg width="256" height="256" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">lnSwitchboard app icon</title>
+  <desc id="desc">A Lightning bolt wired through switchboard circuit paths on a dark console tile.</desc>
+  <defs>
+    <linearGradient id="tile" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#142033" />
+      <stop offset="0.55" stop-color="#0b111c" />
+      <stop offset="1" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="bolt" x1="202" y1="95" x2="323" y2="404" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff3a3" />
+      <stop offset="0.46" stop-color="#facc15" />
+      <stop offset="1" stop-color="#f97316" />
+    </linearGradient>
+    <linearGradient id="trace" x1="98" y1="112" x2="424" y2="402" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e8f9" />
+      <stop offset="1" stop-color="#facc15" />
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.98 0 1 0 0 0.72 0 0 1 0 0.08 0 0 0 0.75 0" result="gold" />
+      <feMerge>
+        <feMergeNode in="gold" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="url(#tile)" />
+  <path d="M94 156h92M94 356h92M326 156h92M326 356h92M112 256h76M324 256h76" fill="none" stroke="url(#trace)" stroke-width="22" stroke-linecap="round" opacity="0.92" />
+  <path d="M170 156v200M342 156v200" fill="none" stroke="#23334b" stroke-width="10" stroke-linecap="round" opacity="0.9" />
+  <circle cx="94" cy="156" r="28" fill="#101827" stroke="#67e8f9" stroke-width="12" />
+  <circle cx="94" cy="356" r="28" fill="#101827" stroke="#67e8f9" stroke-width="12" />
+  <circle cx="418" cy="156" r="28" fill="#101827" stroke="#facc15" stroke-width="12" />
+  <circle cx="418" cy="356" r="28" fill="#101827" stroke="#facc15" stroke-width="12" />
+  <circle cx="112" cy="256" r="18" fill="#67e8f9" />
+  <circle cx="400" cy="256" r="18" fill="#facc15" />
+  <rect x="162" y="94" width="188" height="324" rx="58" fill="#0f172a" stroke="#334155" stroke-width="14" />
+  <path d="M268 112 194 268h60l-18 132 86-184h-64l10-104Z" fill="url(#bolt)" filter="url(#glow)" stroke="#fff7cc" stroke-width="8" stroke-linejoin="round" />
+  <path d="M211 157h-25M326 157h-28M211 356h-25M326 356h-28" stroke="#64748b" stroke-width="12" stroke-linecap="round" opacity="0.85" />
+</svg>
