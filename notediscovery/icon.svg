@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="NoteDiscovery icon">
+  <defs>
+    <linearGradient id="iconBackground" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02040a"/>
+      <stop offset="52%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#1a102a"/>
+    </linearGradient>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#764ba2" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" fill="url(#iconBackground)"/>
+
+  <g transform="translate(-3.53 -3.53) scale(1.3152857)">
+    <!-- Original upstream NoteDiscovery mark, preserved as vector geometry -->
+    <rect x="40" y="30" width="120" height="140" rx="8" fill="url(#logoGradient)"/>
+    <path d="M 140 30 L 140 50 L 160 50 Z" fill="#5568d3"/>
+    <line x1="60" y1="70" x2="140" y2="70" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="60" y1="90" x2="140" y2="90" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <line x1="60" y1="110" x2="120" y2="110" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <g transform="translate(100, 135)">
+      <circle cx="0" cy="0" r="18" fill="none" stroke="white" stroke-width="4"/>
+      <line x1="13" y1="13" x2="25" y2="25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="10" fill="white" opacity="0.3"/>
+    </g>
+  </g>
+</svg>
