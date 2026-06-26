@@ -1,0 +1,15 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EE Gateway">
+  <!-- EE Gateway app icon -->
+  <!-- Brand-aligned: flat, single primary colors only, no gradients, no shadows. -->
+  <!-- Mark: official Encrypted Energy peaks, exact brand vector, recolored Polar. -->
+  <rect x="0" y="0" width="256" height="256" fill="#214140"/>
+  <!-- Lime broadcast signal (secondary pop color) rising from the mark's apex -->
+  <g fill="none" stroke="#D8F464" stroke-width="6.5" stroke-linecap="round">
+    <path d="M135.5 86.5 A 26 26 0 0 1 171.5 86.5"/>
+    <path d="M123 70 A 46 46 0 0 1 184 70"/>
+  </g>
+  <g transform="translate(-276.33,-113.47) scale(0.79009)" fill="#EFFCFC">
+    <path d="M605.41 376.12 L544.17 323.29 L418.09 370.11 L479.34 422.95 L479.34 374.93 L418.09 322.08 L544.17 275.25 L605.41 328.09 Z"/>
+    <path d="M480.83 346.4 L542.07 399.23 L542.07 351.2 L480.83 298.38 Z"/>
+  </g>
+</svg>
