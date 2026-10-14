@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Tunnel icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27352d"/>
+      <stop offset="1" stop-color="#1a221d"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9fd1af"/>
+      <stop offset="1" stop-color="#5d8d6b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" fill="url(#bg)"/>
+  <circle cx="128" cy="128" r="72.5" fill="none" stroke="url(#ring)" stroke-width="22"/>
+  <circle cx="128" cy="128" r="32" fill="#0f1512" stroke="#7ead8a" stroke-width="6"/>
+
+  <rect x="58" y="118.5" width="30" height="19" rx="6" fill="#7ead8a"/>
+  <rect x="168" y="118.5" width="30" height="19" rx="6" fill="#7ead8a"/>
+</svg>
