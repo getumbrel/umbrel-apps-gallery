@@ -1,0 +1,126 @@
+name: Convert images
+
+# Generates icon.png from icon.svg and a .webp copy of every JPEG or PNG gallery
+# image. Originals are never changed or removed.
+#
+# Security model: this only runs on files already merged to master, never on
+# pull requests. Images are decoded in a job that can only read the repository.
+# A separate job that decodes nothing checks the results and commits them.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '*/icon.svg'
+      - '*/*.jpg'
+      - '*/*.jpeg'
+      - '*/*.png'
+  workflow_dispatch:
+    inputs:
+      app:
+        description: App folder to (re)convert, for example "bitcoin"
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  convert:
+    name: Convert (read-only)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22.21.1
+
+      - name: Install the pinned image library
+        working-directory: .github/scripts
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: List the images to convert
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          APP: ${{ inputs.app }}
+        run: |
+          list="$RUNNER_TEMP/sources.txt"
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            if ! printf '%s' "$APP" | grep -Eqx '[a-z0-9][a-z0-9-]*' || [ ! -d "$APP" ]; then
+              echo "Unknown app folder"; exit 1
+            fi
+            find "$APP" -maxdepth 1 -type f | sort > "$list"
+          elif printf '%s' "$BEFORE" | grep -Eqx '[0-9a-f]{40}' \
+            && git fetch --quiet --depth=1 origin "$BEFORE" 2>/dev/null; then
+            git diff --name-only --diff-filter=AMR "$BEFORE" HEAD > "$list"
+          else
+            # The previous commit is unavailable (for example after a force
+            # push), so fall back to converting whatever is missing.
+            : > "$list"
+            echo "all=true" >> "$GITHUB_ENV"
+          fi
+          echo "$(wc -l < "$list") candidate file(s)"
+
+      - name: Convert
+        run: |
+          if [ "${all:-}" = "true" ]; then
+            node .github/scripts/convert.mjs --root . --out "$RUNNER_TEMP/out" --all
+          else
+            node .github/scripts/convert.mjs --root . --out "$RUNNER_TEMP/out" --files "$RUNNER_TEMP/sources.txt"
+          fi
+
+      - name: Upload the converted images
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: converted-images
+          path: ${{ runner.temp }}/out
+          if-no-files-found: ignore
+          retention-days: 3
+
+  commit:
+    name: Commit (no image decoding)
+    needs: convert
+    # Still commit the images that converted when another one was rejected.
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: master
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        id: download
+        continue-on-error: true
+        with:
+          name: converted-images
+          path: ${{ runner.temp }}/out
+
+      - name: Check, copy and commit the converted images
+        if: steps.download.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            # Start from the latest master each time, so a push that landed in
+            # the meantime is never overwritten.
+            git fetch --quiet --depth=1 origin master
+            git reset --quiet --hard FETCH_HEAD
+            node .github/scripts/verify-outputs.mjs "$RUNNER_TEMP/out" . > "$RUNNER_TEMP/accepted.txt"
+            if [ ! -s "$RUNNER_TEMP/accepted.txt" ]; then echo "Nothing to commit"; exit 0; fi
+            xargs -d '\n' git add -- < "$RUNNER_TEMP/accepted.txt"
+            if git diff --cached --quiet; then echo "Already up to date"; exit 0; fi
+            git commit --quiet -m "Generate icon.png and WebP images"
+            if git push --quiet origin HEAD:master; then exit 0; fi
+            echo "Push attempt $attempt failed, retrying"
+          done
+          echo "Could not push after 3 attempts"; exit 1
