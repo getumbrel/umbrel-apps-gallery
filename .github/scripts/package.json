@@ -1,0 +1,8 @@
+{
+  "name": "umbrel-apps-gallery-scripts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "sharp": "0.35.5"
+  }
+}
