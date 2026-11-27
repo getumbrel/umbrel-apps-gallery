@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64" role="img" aria-label="sovBalance">
+  <title>sovBalance</title>
+  <rect width="64" height="64" fill="#000000"/>
+  <path d="M 17.828 20.108 A 18.5 18.5 0 0 1 46.172 20.108" fill="none" stroke="#F7931A" stroke-width="9" stroke-linecap="butt"/>
+  <path d="M 49.384 25.673 A 18.5 18.5 0 0 1 35.212 50.219" fill="none" stroke="#FF6600" stroke-width="9" stroke-linecap="butt"/>
+  <path d="M 28.788 50.219 A 18.5 18.5 0 0 1 14.616 25.673" fill="none" stroke="#FFD24A" stroke-width="9" stroke-linecap="butt"/>
+</svg>
